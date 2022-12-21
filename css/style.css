@@ -1,0 +1,363 @@
+* {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container {
+   max-width: 1220px;
+   margin: 0 auto;
+}
+
+.btn {
+   padding: 10px 20px;
+   border: 2px solid #000;
+   color: #fff;
+   background: #5f27cd;
+   border-radius: 10px;
+   text-transform: capitalize;
+   font-size: 18px;
+   transition: 0.5s ease;
+}
+
+#project h2::after,
+#portfolio h2::after,
+#about-us h2::after,
+.contacts__title::after
+ {
+   content: '';
+   background: #5f27cd;
+   width: 400px;
+   height: 3px;
+   position: absolute;
+   bottom: -5px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+/*-- HEADER -- */
+.container {
+   width: 100%;
+   height: 100vh;
+   background-image: url(../images/bg-bulb.webp);
+   background-position: center;
+   background-size:cover;
+}
+
+.nav {
+   background: #222;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 8%;
+}
+
+.nav__left li, .nav__right li {
+   display: inline-block;
+   padding: 10px 20px;
+   font-size: 18px;
+   text-transform: capitalize;
+}
+
+.nav__left a, .nav__right a {
+   color: rgb(2, 243, 90);
+   transition: all 0.5s ease;
+}
+
+.nav__left a:hover, .nav__right a:hover {
+   text-decoration: underline;
+   color: rgb(243, 82, 2);
+}
+.content {
+   margin: 15%;
+}
+.content__title {
+   font-size: 80px;
+   color: #5f27cd;
+   text-transform: capitalize;
+   margin-bottom: 20px;
+}
+.content__text {
+   font-size: 20px;
+   margin-bottom: 40px;
+}
+
+.content__btn:hover {
+   background: #a87a05;
+   color: #000;
+   transform: translateY(-7px);
+}
+
+/*-- /HEADER--*/
+/*-- PROJECT--*/
+#project {
+   width: 100%;
+   height: 100vh;
+   background-color: #ccc;
+}
+
+#project h2 {
+   text-align: center;
+   padding-top: 50px;
+   font-size: 50px;
+   position: relative;
+   margin-bottom: 100px;
+   
+}
+
+.project-work {
+   padding: 0 8%;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-gap: 30px;
+}
+
+.project-box {
+   text-align: center;
+   padding: 25px 10px;
+   border-radius:10px;
+   font-size: 14px;
+   max-width: 280px;
+   min-height: 200px;
+   background-color:#f1f1f1;
+   cursor: pointer;
+   transition: all 0.5s ease;
+}
+
+.project-box:hover {
+   transform: translateY(-10px);
+}
+.project-box h3 {
+   font-size: 20px;
+   margin: 15px 0;
+}
+
+.see-book:hover {
+   background-color:#487eb0 ;
+}
+
+.green:hover {
+   background-color:#4cd137;
+}
+
+.nasturcia:hover {
+   background-color:#e84118;
+}
+
+.blue-night:hover {
+   background-color:#353b48;
+}
+
+.pilon:hover {
+   background-color:#00a8ff;
+}
+
+.orange:hover {
+   background-color:#c23616;
+}
+
+.gold:hover {
+   background-color:#e1b12c;
+}
+
+.blue:hover {
+   background-color:#0097e6;
+}
+/*--/PROJECT--*/
+/*-- PORTFOLIO--*/
+#portfolio {
+   width: 100%;
+   height: 130vh;
+   background-color: rgb(248, 236, 236);
+   position: relative;
+}
+
+#portfolio h2 {
+   padding-top: 80px;
+   font-size: 50px;
+   text-align: center;
+   position: relative;
+   text-transform: capitalize;
+}
+
+#portfolio h2::after {
+   width: 100px;
+}
+
+.card {
+   padding: 20px;
+   list-style: none;
+   display: grid;
+   grid-template-columns: repeat(3, 250px);
+   gap: 15px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.card__item {
+   cursor: pointer;
+}
+
+#portfolio .color-block {
+   position: absolute;
+   background-color:#5f27cd;
+   width: 400px;
+   height: 700px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+#portfolio .card-portfolio {
+   width: 300px;
+   height: 300px;
+   background:linear-gradient(220deg, #5f27cd,#ffc312);
+   position: absolute;
+   right: 30%;
+   bottom: 10px;
+   padding: 40px;
+   border-radius:20px;
+}
+
+#portfolio h3 {
+   font-size: 30px;
+   text-transform: capitalize;
+   margin-bottom: 15px;
+}
+
+#portfolio p {
+   margin-bottom: 20px;
+}
+
+.card-portfolio {
+   align-items: center;
+}
+
+.card-portfolio__btn:hover {
+   background: #a87a05;
+   color: #000;
+   transform: translateY(-7px);
+}
+/*--/PORTFOLIO--*/
+/*-- ABOUT US --*/
+#about-us {
+   width: 100%;
+   text-align: center;
+   background-image:url(../images/bg-about.webp);
+   background-position:center;
+   background-size:cover;
+}
+
+#about-us h2 {
+   font-size: 50px;
+   text-transform: capitalize;
+   margin-bottom: 30px;
+   padding-top: 30px;
+   position: relative;
+}
+
+#about-us h2::after {
+   width: 100px;
+}
+
+#about-us h4 {
+   font-size: 20px;
+   margin-bottom: 30px;
+}
+
+.about__img {
+   border-radius:50%;
+   background-color:#5f27cd;
+   padding: 6px;
+   display:block;
+   margin: 0 auto;
+   margin-bottom: 30px;
+}
+
+.about__link {
+   display: block;
+   max-width: 180px;
+   text-transform: capitalize;
+   color: #fff;
+   border:2px solid #fff;
+   padding: 15px 30px;
+   border-radius:20px;
+   font-size: 18px;
+   margin: 0 auto;
+   margin-bottom: 20px;
+   transition: all 0.7s ease;
+}
+
+.about__link:hover {
+   background: #a87a05;
+   color: #000;
+   transform: translateY(-7px);
+   border:2px solid #000;
+}
+
+.social-link__img {
+   margin-left: 10px;
+   transition: 0.5s ease;
+   margin-bottom: 50px;
+}
+
+.social-link__img:hover {
+   transform: scale(1.3);
+}
+/*--/ABOUT US --*/
+/*-- CONTACTS --*/
+#contacts {
+   width: 100%;
+   height: 50vh;
+   background-color:#ccc;
+   position: relative;
+}
+
+.contacts__title {
+   text-align: center;
+   font-size: 50px;
+   text-transform: capitalize;
+   padding-top: 40px;
+   position: relative;
+}
+
+.contacts__title::after  {
+   width: 100px;
+}
+
+.contact-blok {
+   display: flex;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate( -50%, -50%);
+}
+
+.contact-blok__item {
+   width: 300px;
+   background:linear-gradient(220deg, #5f27cd,#ffc312);
+   padding: 20px;
+   margin-left: 15px;
+   border-radius:15px;
+}
+
+.contact-blok__item h3 {
+   font-size: 22px;
+   margin-bottom: 15px;
+   text-transform: uppercase;
+}
+
+.contact-blok__item p {
+   font-size: 18px;
+   margin-bottom: 5px;
+}
+/*--/CONTACTS --*/
+/*-- FOOTER --*/
+.footer {
+   font-size: 20px;
+   color: #fff;
+   background: #222;
+   text-align: center;
+   padding: 15px;
+}
+
+/*--/FOOTER --*/
